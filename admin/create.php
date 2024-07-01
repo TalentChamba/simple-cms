@@ -19,7 +19,7 @@ include("./templates/header.php");
     </textarea>
     </div>
     <div class="hidden-input">
-        <input type="hidden" name="date" value="<?php date("Y/m/d"); ?> ">
+        <input type="hidden" name="date" value="<?php echo date("Y-m-d"); ?> ">
     </div>
     <div class="form-field mb-4">
         <input type="submit" class="btn btn-primary" value="submit" name="create">

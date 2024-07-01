@@ -8,6 +8,6 @@
 </head>
 <body>
 <div class="dashboard d-flex justify-content-between">
-    <div class="sidebar bg-dark ">
+    <div class="sidebar bg-dark vh-100">
     <h1 class="bg-primary p-4"> <a href ="" class="text-light text-decoration-none">Dashboard</a> </h1>
     </div>
