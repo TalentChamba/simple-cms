@@ -4,7 +4,7 @@ include("./templates/header.php");
 
 
     <div class="create-form w-100 mx-auto p-4">
-        <form action ="process.php" method ="post">
+        <form action ="../classes/process.php" method ="post">
     <div class="form-field mb-4">
     <input type="text" name="title">
     </div>
