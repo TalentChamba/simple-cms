@@ -9,7 +9,7 @@ include("./templates/header.php");
     <input type="text" name="title">
     </div>
     <div class="form-field mb-4">
-    <textarea name="summary" id="" cols="30" rows="10" placeholder="summary">
+    <textarea name="summary" id="" cols="30" rows="10">
         Enter Summary
     </textarea>
     </div>
@@ -22,7 +22,7 @@ include("./templates/header.php");
         <input type="hidden" name="date" value="<?php echo date("Y-m-d"); ?> ">
     </div>
     <div class="form-field mb-4">
-        <input type="submit" class="btn btn-primary" value="submit" name="create">
+        <input type="submit" class="btn btn-primary" value="create" name="create">
     </div>
     </form>
     </div>
