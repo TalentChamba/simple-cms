@@ -1,15 +1,29 @@
 <?php
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "cms";
+class databaseString {
 
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    private $dbhost = "localhost";
+    private $dbuser = "root";
+    private $dbpass = "";
+    private $dbname ="cms";
 
-if(!$conn) {
-    die("No database found". mysqli_connect_error());
+    protected function connectionString() {
+    try{
+        $dsn = "mysql:host={$this->dbhost}; dbname={$this->dbname}";
+        $username = $this->dbuser;
+        $password = $this->dbpass;
+        $pdo = new PDO($dsn, $username, $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $pdo;
+
+    } catch(Exception $e) {
+    die("database could not connect". $e->getMessage());
+    }
+
+    }
+
 }
+
 
 
 
